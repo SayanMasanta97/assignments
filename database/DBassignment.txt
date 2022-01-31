@@ -1,0 +1,14 @@
+SELECT COUNT(*) FROM EmployeeInfo WHERE Department = 'Admin'; #Query for Qus 1
+
+SELECT SUBSTRING(EmpLname,1,4) FROM EmployeeInfo; #Query for Qus 2
+
+SELECT * FROM EmployeePos WHERE Salary BETWEEN 50000 AND 100000; #Query for Qus 3
+
+SELECT * FROM EmployeeInfo WHERE EmpFname like 'S%';  #Query for Qus 4
+
+SELECT Salary,EmpID,EmpPosition,DateOfJoining FROM EmployeePos ORDER BY Salary DESC LIMIT 4 OFFSET 0; #Query for Qus 5
+
+SELECT * FROM EmployeeInfo WHERE EmpFname like 'A%' OR EmpFname like 'R%'; #Query for Qus 6
+
+SELECT Department,COUNT(*) FROM EmployeeInfo GROUP BY Department
+ORDER BY Department ASC; #Query for Qus 7
